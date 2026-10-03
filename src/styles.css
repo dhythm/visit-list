@@ -85,10 +85,8 @@ main {
 
 .search-card {
   padding: 20px;
-  transition: transform 0.15s ease;
 }
 
-.search-card:hover,
 .shop-card:hover {
   transform: translateY(-2px);
 }
