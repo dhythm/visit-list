@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訪問リスト</title>
+    <meta
+      name="description"
+      content="飲食の卸・設備営業向け。市区町村と業種で、今日回る店を決める。"
+    />
+    <script>
+      // SPA fallback recovery for GitHub Pages project sites.
+      // https://github.com/rafgraph/spa-github-pages (MIT)
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            "",
+            l.pathname.slice(0, -1) + decoded + l.hash,
+          );
+        }
+      })(window.location);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
